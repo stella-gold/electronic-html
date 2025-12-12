@@ -193,6 +193,37 @@ body {
     width: 100%;
     }
 
+
+.top-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+}
+
+.top-title .t-box {
+    position: relative; /* z-index 사용 가능 */
+    border-radius: 6rem;
+    padding: 3rem 8rem;
+    width: 51%;
+    background: radial-gradient(
+        circle,
+        rgba(5, 46, 139, 0.8) 0%,    /* 중심 진하게 */
+        rgba(23, 73, 185, 0.15) 40%, /* 자연스러운 흐림 */
+        rgba(23, 73, 185, 0.0) 100%   /* 바깥 완전 투명 */
+    );
+}
+
+.top-title .t-box h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 10;
+}
+
 .wp_100{width:100% !important}
 .w_520x{width:520px !important}
 
