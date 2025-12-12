@@ -172,6 +172,7 @@ body {
     line-height: 1.6;
     color: #252525;
     background: url(../images/back_bg.png) repeat-x;
+    background-position: 0 -5rem;
 
 }
 
@@ -179,7 +180,9 @@ body {
 #wrap {
    position: relative;
     overflow: hidden;
-    background-image:url(../images/back_img.png); background-position:center 0; background-repeat: no-repeat;;
+    background-image:url(../images/back_img.png); 
+    background-position: center -13rem;
+    background-repeat: no-repeat;;
 }
 
 
@@ -213,8 +216,8 @@ body {
 
 
 
-.btnArea{width:100%; text-align:right; padding:10px 0}
-.btnArea button{border:0; background:#448CCB; height: 100%; padding:10px 15px; color:#fff; font-weight:600}
+/* .btnArea{width:100%; text-align:right; padding:10px 0}
+.btnArea button{border:0; background:#448CCB; height: 100%; padding:10px 15px; color:#fff; font-weight:600} */
 
 .infoArea > h4.tit{font-size:3.2rem; display:flex; align-items: center; justify-content: center; margin-bottom: 2rem;}
 
@@ -296,6 +299,7 @@ h2{font-size:2.2rem;font-weight:600;color:#fff;text-align: center;padding: 20px 
 330deg, #044d2e, #2e7d32);display:inline-flex;justify-content: center;align-items: center;}
 h4{font-size:1.8rem; font-weight:600; color:#3a3a3a}
 
+input[type="text"]{border:solid .1rem #ddd;padding:.2rem .4rem;border-radius: .3rem;text-align: right;min-width: 10rem;}
 
 .link-etc{position:relative;display:grid !important;grid-template-columns: repeat(5,1fr);gap:2rem; width:100%; padding:0}
 .link-etc li{display: flex;justify-content: center;align-items: center; box-sizing: border-box; border:solid .1rem #ddd;border-radius: 1rem;background:#fff;}
@@ -397,7 +401,7 @@ h4{font-size:1.8rem; font-weight:600; color:#3a3a3a}
 }
 
 /* 셀 스타일 */
-.ta_list table tbody tr th,
+
 .ta_list table tbody tr td {
     border: 0;
     padding:.5rem 1rem;
@@ -405,19 +409,31 @@ h4{font-size:1.8rem; font-weight:600; color:#3a3a3a}
 }
 
 /* th나 td에 세로선 필요할 때 */
+.ta_list table thead tr th,
 .ta_list table tbody tr th {
     background:#e4efe7; border-right:solid .1rem #afafaf
 }
 
-/* 마지막 th의 border-right 제거 (원하지 않을 경우 주석 처리)
-table th:last-child {
+.ta_list table thead tr th{background:#a0c7aa;border-right:solid .1rem #6ba778; padding:1rem }
+
+
+.ta_list  table thead tr th:last-child {
     border-right: 0;
-} */
+}
+.ta_list  table tbody.bor_line >tr>td{border-right:solid .1rem #afafaf; text-align: center; padding:.2rem 1rem; }
+.ta_list  table tbody.bor_line >tr>td:last-child{border-right:0; background:#f5f5f5}
+.ta_list  table tbody.bor_line >tr>td .bg_none{background:transparent; border:none}
+.ta_list  table th, .ta_list  table td{line-height: normal;}
 
 .ta_list table tbody .depth2{background:#dee1da; font-weight:500; font-size:1.8rem; padding:1.5rem 3rem}
 
 
 
+
+
+
+.btn_calculate{border:0;border-radius: 3rem;background:#f26522;color:#fff;font-weight:600;font-size:2rem;padding: 1.5rem 8rem;border: solid .2rem #e36022; margin: 2.5rem auto;display: flex; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); cursor: pointer; }
+.btn_calculate:hover, .btn_calculate:active{background:#ca4b10}
 
 
 /* 여백 */
@@ -463,5 +479,8 @@ table th:last-child {
 .txt-large{font-size:3rem}
 .bg-gray{background:#f1f1f1}
 .bg-light-gray{background:#dee1da}
+.bg-light-green{background:#f6fff9}
 .tx-red{color:#F26522}
 
+.wid_5{width:5rem}
+.wid_10{width:10rem}
