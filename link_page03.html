@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>내일을 여는 에너지 한국전기안전공사</title>
+        <link rel="stylesheet" href="css/common.css">       
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div class="conArea">
+                <div class="content" style="padding-top:380px">
+                    <div class="box">
+                         <div class="tabs-container">
+                            <ul class="tabs">
+                                <li><a href="link_page01.html" class="tab">비상발전기</a></li>
+                                <li><a href="link_page02.html" class="tab">전기차 충전기</a></li>
+                                <li><a href="link_page03.html" class="tab active">풍력</a></li>
+                                <li><a href="link_page04.html" class="tab">태양광</a></li>
+                            </ul>
+                            <!-- tab-content  -->
+                            <div class="tab-content active">
+                                <div class="dis_alc">
+                                     <h2>풍력안전지수</h2>
+                                </div>
+                                <div class="check_con pt50">
+                                    <div class="con_area">
+                                        <h4>토목기초</h4>
+                                        <div class="ta_list">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:15%">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" class="depth2">
+                                                            기초구조물
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>기초구조물관리상태</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule1" name="a_wind_moudule" value="01">
+                                                                        <label for="a_wind_moudule1">기초구조물 관리상태 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule2" name="a_wind_moudule" value="02">
+                                                                        <label for="a_wind_moudule2">기초구조물 관리상태 관리필요(현장조치 가능)</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule3" name="a_wind_moudule" value="03">
+                                                                        <label for="a_wind_moudule3">기초구조물 관리상태 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>부식방지 상태</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule11" name="a_wind_moudule11" value="01">
+                                                                        <label for="a_wind_moudule11">부식방지 상태 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule12" name="a_wind_moudule11" value="02">
+                                                                        <label for="a_wind_moudule12">부식방지 상태 관리필요(현장조치 가능)</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule13" name="a_wind_moudule11" value="03">
+                                                                        <label for="a_wind_moudule13">부식방지 상태 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>정착부 설치상태</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule21" name="a_wind_moudule21" value="01">
+                                                                        <label for="a_wind_moudule21">정착부 설치상태 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule22" name="a_wind_moudule21" value="02">
+                                                                        <label for="a_wind_moudule22">정착부 설치상태 관리필요(기능상 문제없음)</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule13" name="a_wind_moudule21" value="03">
+                                                                        <label for="a_wind_moudule23">정착부 설치상태 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                     <tr>
+                                                        <th>앵커볼트 토크값</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule31" name="a_wind_moudule31" value="01">
+                                                                        <label for="a_wind_moudule31">앵커볼트 토크값 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule32" name="a_wind_moudule31" value="02">
+                                                                        <label for="a_wind_moudule32">앵커볼트 토크값 관리필요(기능상 문제없음)</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule33" name="a_wind_moudule31" value="03">
+                                                                        <label for="a_wind_moudule33">앵커볼트 토크값 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="depth2">
+                                                            기초 부대시설
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th> 기초의 보호상태</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule41" name="a_wind_moudule41" value="01">
+                                                                        <label for="a_wind_moudule41">구조물 기초 보호상태 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule42" name="a_wind_moudule41" value="02">
+                                                                        <label for="a_wind_moudule42">구조물 기초 보호상태 관리필요(현장조치 가능)</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule43" name="a_wind_moudule41" value="03">
+                                                                        <label for="a_wind_moudule43">구조물 기초 보호상태 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th> 기초주변의 배수처리상태</th>
+                                                        <td>
+                                                            <div class="conView">
+                                                                <ul class="radio_list">
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule51" name="a_wind_moudule51" value="01">
+                                                                        <label for="a_wind_moudule51">기초주변 배수처리상태 적정</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a_wind_moudule52" name="a_wind_moudule51" value="02">
+                                                                        <label for="a_wind_moudule52">기초주변 배수처리상태 부적정</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="pt50">
+                                            <h4>풍력설비</h4>
+                                            <div class="ta_list">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:15%">
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                                일반규격(0.167)
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>규격확인</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule61" name="a_wind_moudule61" value="01">
+                                                                            <label for="a_wind_moudule61">풍력설비 규격 일치</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule62" name="a_wind_moudule61" value="02">
+                                                                            <label for="a_wind_moudule62">풍력설비 규격 불일치</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               비상정지 및 안전장치
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수동비상정지 시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule71" name="a_wind_moudule71" value="01">
+                                                                            <label for="a_wind_moudule71">수동비상정지 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule72" name="a_wind_moudule71" value="02">
+                                                                            <label for="a_wind_moudule72">수동비상정지 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어용 압유 고온도 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule81" name="a_wind_moudule81" value="01">
+                                                                            <label for="a_wind_moudule81">제어용 압유 고온도 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule82" name="a_wind_moudule81" value="02">
+                                                                            <label for="a_wind_moudule82">제어용 압유 고온도 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어용 압유 저압력 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule91" name="a_wind_moudule91" value="01">
+                                                                            <label for="a_wind_moudule91">제어용 압유 저압력 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a_wind_moudule92" name="a_wind_moudule91" value="02">
+                                                                            <label for="a_wind_moudule92">제어용 압유 저압력 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>기어 윤활유 저압력 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a1_wind_moudule1" name="a1_wind_moudule1" value="01">
+                                                                            <label for="a1_wind_moudule1">기어 윤활유 저압력 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a1_wind_moudule2" name="a1_wind_moudule1" value="02">
+                                                                            <label for="a1_wind_moudule2">기어 윤활유 저압력 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>기어 윤활유 고온도 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">기어 윤활유 고온도 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">기어 윤활유 고온도 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>터빈 베어링 고온도 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">터빈 베어링 고온도 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">터빈 베어링 고온도 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>컷아웃 풍속 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">컷아웃 풍속 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">컷아웃 풍속 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어용 압축공기 저압력 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">제어용 압축공기 저압력 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">제어용 압축공기 저압력 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>나셀 고진동 정지시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">나셀 고진동 정지시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">나셀 고진동 정지시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>과속도 정지시험(발전기측)</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">과속도 정지시험(터빈측) 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">과속도 정지시험(터빈측) 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>화재방호설비 설치상태</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">화재방호설비 설치상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">화재방호설비 설치상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>풍차 및 타워 구조물 설치상태</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">풍차 및 타워 구조물 설치상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">풍차 및 타워 구조물 설치상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>지상 주전원 개폐장치 설치상태</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">지상 주전원 개폐장치 설치상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">지상 주전원 개폐장치 설치상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>지상 주전원 개폐장치 설치상태</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule1" name="a2_wind_moudule1" value="01">
+                                                                            <label for="a2_wind_moudule1">지상 주전원 개폐장치 설치상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a2_wind_moudule2" name="a2_wind_moudule1" value="02">
+                                                                            <label for="a2_wind_moudule2">지상 주전원 개폐장치 설치상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="pt50">
+                                            <h4>발전기</h4>
+                                            <div class="ta_list">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:15%">
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               발전기 시험검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>외관검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a18_solar_module1" name="a18_solar_module" value="01">
+                                                                            <label for="a18_solar_module1">발전기 외관상태 적정 </label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a18_solar_module2" name="a18_solar_module" value="02">
+                                                                            <label for="a18_solar_module2">발전기 외관상태 관리필요(기능상 문제없음)</label>
+                                                                        </li>
+                                                                         <li>
+                                                                            <input type="radio" id="a18_solar_module3" name="a18_solar_module" value="02">
+                                                                            <label for="a18_solar_module3">발전기 외관상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>조작용 전원 및 회로점검</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a19_solar_module1" name="a19_solar_module" value="01">
+                                                                            <label for="a19_solar_module1">발전기 조작용 전원 및 회로 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a19_solar_module2" name="a19_solar_module" value="02">
+                                                                            <label for="a19_solar_module2">발전기 조작용 전원 및 회로 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>보호장치 및 계전기시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a19_solar_module1" name="a19_solar_module" value="01">
+                                                                            <label for="a19_solar_module1">발전기 보호장치 및 계전기 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a19_solar_module2" name="a19_solar_module" value="02">
+                                                                            <label for="a19_solar_module2">발전기 보호장치 및 계전기 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>절연저항 측정</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a20_solar_module1" name="a20_solar_module" value="01">
+                                                                            <label for="a20_solar_module1">발전기 절연저항 측정 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a20_solar_module2" name="a20_solar_module" value="02">
+                                                                            <label for="a20_solar_module2">발전기 절연저항 측정 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어 및 경보장치 시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a20_solar_module1" name="a20_solar_module" value="01">
+                                                                            <label for="a20_solar_module1">발전기 제어 및 경보장치 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a20_solar_module2" name="a20_solar_module" value="02">
+                                                                            <label for="a20_solar_module2">발전기 제어 및 경보장치 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>동기검정장치 시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a21_solar_module1" name="a21_solar_module" value="01">
+                                                                            <label for="a21_solar_module1">동기검정장치 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a21_solar_module2" name="a21_solar_module" value="02">
+                                                                            <label for="a21_solar_module2">동기검정장치 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>자동전압 조정기 시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a21_solar_module1" name="a21_solar_module" value="01">
+                                                                            <label for="a21_solar_module1">자동전압 조정기 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a21_solar_module2" name="a21_solar_module" value="02">
+                                                                            <label for="a21_solar_module2">자동전압 조정기 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>소내모선 절체검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a22_solar_module1" name="a22_solar_module" value="01">
+                                                                            <label for="a22_solar_module1">소내모선 절체검사 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a22_solar_module2" name="a22_solar_module" value="02">
+                                                                            <label for="a22_solar_module2">소내모선 절체검사 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="pt50">
+                                            <h4>변압기</h4>
+                                            <div class="ta_list">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:15%">
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               주변압기 시험검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>외관검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a23_solar_module1" name="a23_solar_module" value="01">
+                                                                            <label for="a23_solar_module1">발전기 외관상태 적정 </label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a23_solar_module2" name="a23_solar_module" value="02">
+                                                                            <label for="a23_solar_module2">발전기 외관상태 관리필요(기능상 문제없음)</label>
+                                                                        </li>
+                                                                         <li>
+                                                                            <input type="radio" id="a23_solar_module3" name="a23_solar_module" value="02">
+                                                                            <label for="a23_solar_module3">발전기 외관상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>조작용 전원 및 회로점검</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a24_solar_module1" name="a24_solar_module" value="01">
+                                                                            <label for="a24_solar_module1">발전기 조작용 전원 및 회로 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a24_solar_module2" name="a24_solar_module" value="02">
+                                                                            <label for="a24_solar_module2">발전기 조작용 전원 및 회로 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>보호장치 및 계전기시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a19_solar_module1" name="a25_solar_module" value="01">
+                                                                            <label for="a25_solar_module1">주변압기 보호장치 및 계전기 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a25_solar_module2" name="a25_solar_module" value="02">
+                                                                            <label for="a25_solar_module2">주변압기 보호장치 및 계전기 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>절연저항 측정</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a26_solar_module1" name="a26_solar_module" value="01">
+                                                                            <label for="a26_solar_module1">주변압기 절연저항 측정 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a26_solar_module2" name="a26_solar_module" value="02">
+                                                                            <label for="a26_solar_module2">주변압기 절연저항 측정 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>절연유 내압시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a27_solar_module1" name="a27_solar_module" value="01">
+                                                                            <label for="a20_solar_module1">주변압기 절연유 내압시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a27_solar_module2" name="a27_solar_module" value="02">
+                                                                            <label for="a27_solar_module2">주변압기 절연유 내압시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어 및 경보장치 시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a28_solar_module1" name="a28_solar_module" value="01">
+                                                                            <label for="a28_solar_module1">주변압기 제어 및 경보장치 시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a28_solar_module2" name="a28_solar_module" value="02">
+                                                                            <label for="a28_solar_module2">주변압기 제어 및 경보장치 시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               소내용변압기 시험검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>소내용변압기 시험검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a29_solar_module1" name="a29_solar_module" value="01">
+                                                                            <label for="a29_solar_module1">소내용변압기 시험검사 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a29_solar_module2" name="a29_solar_module" value="02">
+                                                                            <label for="a29_solar_module2">소내용변압기 시험검사 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               기동용 변압기 시험검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>기동용 변압기 시험검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a30_solar_module1" name="a30_solar_module" value="01">
+                                                                            <label for="a30_solar_module1">기동용변압기 시험검사 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a30_solar_module2" name="a30_solar_module" value="02">
+                                                                            <label for="a30_solar_module2">기동용변압기 시험검사 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="pt50">
+                                            <h4>차단기</h4>
+                                            <div class="ta_list">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:15%">
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               차단기 시험검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th> 외관검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a31_solar_module1" name="a31_solar_module" value="01">
+                                                                            <label for="a31_solar_module1">차단기 외관상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a31_solar_module2" name="a31_solar_module" value="02">
+                                                                            <label for="a31_solar_module2">차단기 외관 관리필요(기능상 문제없음) </label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a31_solar_module3" name="a31_solar_module" value="03">
+                                                                            <label for="a31_solar_module3">차단기 외관상태 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th> 조작용 전원 및 회로점검</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a32_solar_module1" name="a32_solar_module" value="01">
+                                                                            <label for="a32_solar_module1">차단기 조작용 전원 및 회로 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a32_solar_module2" name="a32_solar_module" value="02">
+                                                                            <label for="a32_solar_module2">차단기 조작용 전원 및 회로 부적정 </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>절연저항 측정</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a33_solar_module1" name="a33_solar_module" value="01">
+                                                                            <label for="a33_solar_module1">차단기 절연저항 측정 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a33_solar_module2" name="a33_solar_module" value="02">
+                                                                            <label for="a33_solar_module2">차단기 절연저항 측정 부적정 </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>개폐표시 상태 확인</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a34_solar_module1" name="a34_solar_module" value="01">
+                                                                            <label for="a34_solar_module1">차단기 개폐표시 상태 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a34_solar_module2" name="a34_solar_module" value="02">
+                                                                            <label for="a34_solar_module2">차단기 개폐표시 상태 부적정 </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>제어 및 경보장치시험</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a35_solar_module1" name="a35_solar_module" value="01">
+                                                                            <label for="a35_solar_module1">차단기 제어 및 경보장치시험 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a35_solar_module2" name="a35_solar_module" value="02">
+                                                                            <label for="a35_solar_module2">차단기 제어 및 경보장치시험 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>공기 압축장치</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a36_solar_module1" name="a36_solar_module" value="01">
+                                                                            <label for="a36_solar_module1">차단기 공기 압축장치 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a36_solar_module2" name="a36_solar_module" value="02">
+                                                                            <label for="a36_solar_module2">차단기 공기 압축장치 부적정</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="pt50">
+                                            <h4>운전시험</h4>
+                                            <div class="ta_list">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:15%">
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               종합연동시험 검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th> 종합연동시험 검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a37_solar_module1" name="a37_solar_module" value="01">
+                                                                            <label for="a37_solar_module1">종합연동시험 검사 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a37_solar_module2" name="a37_solar_module" value="02">
+                                                                            <label for="a37_solar_module2">종합연동시험 검사 부적정 </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" class="depth2">
+                                                               부하운전 시험 검사
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th> 부하운전 시험 검사</th>
+                                                            <td>
+                                                                <div class="conView">
+                                                                    <ul class="radio_list">
+                                                                        <li>
+                                                                            <input type="radio" id="a38_solar_module1" name="a38_solar_module" value="01">
+                                                                            <label for="a37_solar_module1">부하운전 시험 검사 적정</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="radio" id="a38_solar_module2" name="a38_solar_module" value="02">
+                                                                            <label for="a38_solar_module2">부하운전 시험 검사 부적정 </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- check_con -->
+                                     <div class="infoArea pt70">
+                                        <h4 class="tit">항목별점수</h4>
+                                        <div class="resultArea">
+                                            <table>
+                                                <colgroup>
+                                                    <col span="7" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>토목기초</th>
+                                                        <th>풍력설비</th>
+                                                        <th>발전기</th>
+                                                        <th>변압기</th>
+                                                        <th>차단기</th>
+                                                        <th>운전시험</th>
+                                                        <th>종합점수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td-r">83.333</td>
+                                                        <td class="td-r">100</td>
+                                                        <td class="td-r">100</td>
+                                                        <td class="td-r">100</td>
+                                                        <td class="td-r">100</td>
+                                                        <td class="td-r">100</td>
+                                                        <td class="td-r tx-bold txt-large bg-gray tx-red">100</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab-content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </body>   
+</html>
