@@ -1,0 +1,467 @@
+@charset "utf-8";
+
+@import url(font/font.css);
+
+html{font-size:62.5% !important}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+body,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+input,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+mark,
+nav,
+menu,
+object,
+ol,
+output,
+option,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+sub,
+sup,
+table,
+tbody,
+tfoot,
+thead,
+th,
+tr,
+td,
+video,
+tt,
+u,
+ul,
+var {
+    padding: 0;
+    margin: 0;   
+    font: inherit;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+table {
+    
+    border-spacing: 0;
+}
+
+caption,
+legend {
+    position: relative;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+td,
+th {
+    word-break: break-all;
+    vertical-align: middle;
+}
+
+mark,
+var {
+    background: none;
+}
+
+img,
+input,
+button,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+img,
+fieldset,
+iframe {
+    border: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #525252;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent !important;
+}
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,th,td,input,select,textarea,button,p,blockquote,caption,legend,pre,figure {margin:0;padding:0;line-height:23px;word-break:keep-all;font-size:16px}
+
+body {
+    -webkit-text-size-adjust: none;
+    font-family: "Noto Sans Korean", '맑은고딕', Dotum, '돋움', arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:16px;
+    line-height: 1.6;
+    color: #252525;
+    background: url(../images/back_bg.png) repeat-x;
+
+}
+
+
+#wrap {
+   position: relative;
+    overflow: hidden;
+    background-image:url(../images/back_img.png); background-position:center 0; background-repeat: no-repeat;;
+}
+
+
+.conArea{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    }
+
+.wp_100{width:100% !important}
+.w_520x{width:520px !important}
+
+.conView {margin-top:10px}
+.conView ul.sel_list{display: flex; flex-wrap: wrap; }
+.conView ul.sel_list >li{
+    display: flex; align-items: center; padding: .5rem;  margin-left:10px
+}
+.conView ul.sel_list >li:first-child{margin-left:0}
+.conView ul.sel_list >li select{
+    padding: .3rem .5rem .3rem .3rem;
+    border: solid .1rem #DBDBDB;
+    border-radius: .4rem;
+}
+.chekArea{padding:2px 10px}
+.chekArea >div{ display: flex; align-items: center; border-bottom: solid 1px #DBDBDB;}
+.chekArea >div:last-child{border-bottom:0}
+.chekArea >div > strong {color:#448CCB; font-weight:500; min-width:220px}
+.chekArea >div > ul{margin-left:10px}
+.chekArea label{padding-left:10px}
+
+
+
+.btnArea{width:100%; text-align:right; padding:10px 0}
+.btnArea button{border:0; background:#448CCB; height: 100%; padding:10px 15px; color:#fff; font-weight:600}
+
+.infoArea > h4.tit{font-size:3.2rem; display:flex; align-items: center; justify-content: center; margin-bottom: 2rem;}
+
+.resultArea{width:100%; display:flex;}
+.resultArea>div{background:#F26522;color:#fff;text-align: center;font-size:27px; padding: 15px 0;  }
+
+
+.box{width:100%; height:100%; border:solid .3rem #87b331; border-radius:.5rem; background:#fff; padding-bottom:5rem; margin-bottom: 5rem;}
+
+/* 탭 메뉴 스타일 */
+.tabs {
+  display: flex; /* 탭을 가로로 정렬 */
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; /* 불릿 없애기 */
+  padding: 0;
+  margin: 0;
+  border-bottom:solid .1rem #87b331;
+}
+
+.tabs li {
+  margin-right: 1rem; /* 탭 간격 설정 */
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs a {
+    position: relative;
+ text-decoration: none;
+    padding: 0 2rem; 
+  /* background-color: #f1f1f1; */
+  border-radius: .5rem;
+  font-size:2rem;
+  font-weight:400;
+  white-space: nowrap;
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  min-width: 11rem;
+  justify-content: center;
+  color:#87b331
+}
+
+.tabs a.active, 
+.tabs a:hover,
+.tabs a:active,
+.tabs a:focus {
+  /* background-color: #007bff; */
+  color: #044d2e;
+  font-weight: 600;
+}
+
+.tabs a.active:before,
+.tabs a:hover:before,
+.tabs a:active:before,
+.tabs a:focus:before{
+    content: ''; position:absolute; left:0; bottom:0; width:100%; height:2px; background:#87b331
+}
+
+
+/* 탭 컨텐츠 스타일 */
+.tab-content {
+  display: none; /* 기본적으로 숨김 */
+  padding: 20px 30px;
+  width: 100%; /* 부모 요소 전체 너비를 차지 */
+  box-sizing: border-box; /* 패딩을 포함한 넓이 계산 */
+  margin: 2rem 0;
+
+}
+
+.tab-content.active {
+  display: block; /* 선택된 컨텐츠만 보이게 */
+}
+
+.dis_alc{width:100%; display:flex; align-items: center; justify-content:center }
+h2{font-size:2.2rem;font-weight:600;color:#fff;text-align: center;padding: 20px 62px;border-radius:30px;background: linear-gradient(
+330deg, #044d2e, #2e7d32);display:inline-flex;justify-content: center;align-items: center;}
+h4{font-size:1.8rem; font-weight:600; color:#3a3a3a}
+
+
+.link-etc{position:relative;display:grid !important;grid-template-columns: repeat(5,1fr);gap:2rem; width:100%; padding:0}
+.link-etc li{display: flex;justify-content: center;align-items: center; box-sizing: border-box; border:solid .1rem #ddd;border-radius: 1rem;background:#fff;}
+.link-etc li a{display:block;padding: 1rem;}
+
+
+.radio_list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center
+}
+
+.radio_list li {
+  margin: 0.5rem 1rem;
+}
+
+.radio_list input[type="radio"] {
+  display: none; /* 기본 라디오 버튼 숨김 */
+}
+
+.radio_list label {
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  display:flex;
+  align-items:center;
+}
+
+/* 버튼의 기본 원 */
+.radio_list label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border: .2rem solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* 안쪽 점 (선택 시 표시) */
+.radio_list label::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width:1rem;
+  height:1rem;
+  background-color: #f16b28;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+/* ✅ 선택된 상태 */
+.radio_list input[type="radio"]:checked + label::before {
+  border-color:#f16b28;
+}
+
+.radio_list input[type="radio"]:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+
+.con_area h4{font-size:2rem; background: #b9d1be; padding: 1.5rem 2rem; border-radius: .5rem .5rem 0 0; border: solid .1rem #b9d1be;}
+
+.resultArea table{width:100%;table-layout: fixed;max-width: none;width: auto;min-width: 100%;border-collapse: collapse;border-bottom: solid .1rem #999;}
+.resultArea table thead th{border-right:solid .1rem #f26522; border-top: solid .2rem #f26522;border-bottom: solid .1rem #f26522;padding:2rem 0;text-align: center;font-weight:600;font-size:2rem;background: #f37e46;color: #fff;}
+.resultArea table thead th:last-child{background:#bd4a11; border-right:0}
+.resultArea table tbody td{padding:1.5rem 2rem; text-align:center; color:#252525; border-right:solid .1rem #999; font-size:2rem}
+.resultArea table tbody td:last-child{border-right:none}
+.resultArea table tbody td.td-r{text-align: right;}
+
+/*.ta_list table{ border-top:solid .2rem #333; }
+.ta_list table >tr {border-bottom:solid .1rem #333}
+.ta_list table th{background:#b9d1be; border-right:solid .1rem #333}*/
+
+.ta_list table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top:solid .2rem #333;
+    border-bottom:solid .1rem #333
+}
+
+/* 행 라인 */
+.ta_list table tbody  tr {
+    border-bottom:solid .1rem #afafaf
+}
+
+/* 셀 스타일 */
+.ta_list table tbody tr th,
+.ta_list table tbody tr td {
+    border: 0;
+    padding:.5rem 1rem;
+    background-clip: padding-box
+}
+
+/* th나 td에 세로선 필요할 때 */
+.ta_list table tbody tr th {
+    background:#e4efe7; border-right:solid .1rem #afafaf
+}
+
+/* 마지막 th의 border-right 제거 (원하지 않을 경우 주석 처리)
+table th:last-child {
+    border-right: 0;
+} */
+
+.ta_list table tbody .depth2{background:#dee1da; font-weight:500; font-size:1.8rem; padding:1.5rem 3rem}
+
+
+
+
+
+/* 여백 */
+.p0{padding:0}
+.pt5{padding-top:.5rem}
+.pt10{padding-top:1rem}
+.pt15{padding-top:1.5rem}
+.pt20{padding-top:2rem}
+.pt25{padding-top:2.5rem}
+.pt30{padding-top:3rem}
+.pt35{padding-top:3.5rem}
+.pt40{padding-top:4rem}
+.pt45{padding-top:4.5rem}
+.pt50{padding-top:5rem}
+.pt55{padding-top:5.5rem}
+.pt60{padding-top:6rem}
+.pt65{padding-top:6.5rem}
+.pt70{padding-top:7rem}
+
+.pl5{padding-left:.5rem}
+.pl10{padding-left:1rem}
+.pl15{padding-left:1.5rem}
+.pl20{padding-left:2rem}
+.pl25{padding-left:2.5rem}
+.pl30{padding-left:3rem}
+.pl35{padding-left:3.5rem}
+.pl40{padding-left:4rem}
+.pl45{padding-left:4.5rem}
+.pl50{padding-left:5rem}
+.pl55{padding-left:5.5rem}
+.pl60{padding-left:6rem}
+.pl65{padding-left:6.5rem}
+.pl70{padding-left:7rem}
+
+
+.txt-c{text-align: center;}
+.txt-l{text-align:left}
+.txt-r{text-align: right;}
+.tx-bold{font-weight:600}
+.txt-small{font-size:1.4rem}
+.txt-default{font-size:1.6rem}
+.txt-medium{font-size:2rem}
+.txt-large{font-size:3rem}
+.bg-gray{background:#f1f1f1}
+.bg-light-gray{background:#dee1da}
+.tx-red{color:#F26522}
+
